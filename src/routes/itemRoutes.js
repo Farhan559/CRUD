@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Item = require('../models/Items');
 
-// Create an items
+// Create a item
 router.post('/', async (req, res) => {
     try {
         const newItem = new Item(req.body);
